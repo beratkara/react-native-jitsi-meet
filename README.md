@@ -259,24 +259,3 @@ npm i jsc-android
       return "app.bundle";
     }
 ```
-
-3.) In `android/build.gradle`, add the following code 
-```
-allprojects {
-    repositories {
-        mavenLocal()
-        jcenter()
-        maven {
-            // All of React Native (JS, Obj-C sources, Android binaries) is installed from npm
-            url "$rootDir/../node_modules/react-native/android"
-        }
-        maven {
-            url "https://maven.google.com"
-        }
-        maven { // <---- Add this block
-            url "https://github.com/jitsi/jitsi-maven-repository/raw/master/releases"
-        }
-        maven { url "https://jitpack.io" }
-    }
-}
-```
