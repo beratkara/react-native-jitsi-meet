@@ -16,7 +16,7 @@ The following component is an example of use:
 ```
 import React, { useEffect } from 'react';
 import { View } from 'react-native';
-import JitsiMeet, { JitsiMeetView } from 'react-native-jitsi-meet';
+import JitsiMeet, { JitsiMeetView } from '@beratkara/react-native-jitsi-meet';
 
 const VideoCall = () => {
   const onConferenceTerminated = (nativeEvent) => {
