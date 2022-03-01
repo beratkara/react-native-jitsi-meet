@@ -15,9 +15,11 @@ JitsiMeetModule.call = (url, userInfo, meetOptions, meetFeatureFlags) => {
   meetFeatureFlags = meetFeatureFlags || {};
   call(url, userInfo, meetOptions, meetFeatureFlags);
 }
-JitsiMeetModule.audioCall = (url, userInfo) => {
+JitsiMeetModule.audioCall = (url, userInfo, meetOptions, meetFeatureFlags) => {
   userInfo = userInfo || {};
-  audioCall(url, userInfo);
+  meetOptions = meetOptions || {};
+  meetFeatureFlags = meetFeatureFlags || {};
+  audioCall(url, userInfo, meetOptions, meetFeatureFlags);
 }
 JitsiMeetModule.endCall = () => {
   endCall();
