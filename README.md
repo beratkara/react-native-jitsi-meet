@@ -206,7 +206,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation "com.android.support:appcompat-v7:28.0.0"
-    implementation(project(':react-native-jitsi-meet')) {
+    implementation(project(':beratkara_react-native-jitsi-meet')) {
       exclude group: 'com.facebook.react',module:'react-native-locale-detector'
       exclude group: 'com.facebook.react',module:'react-native-vector-icons'
       exclude group: 'com.facebook',module:'hermes'
